@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radios</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        input{
+          display: none;  
+        }
+        label{
+            display: inline-block;
+            font-size: 16px;
+           width:  90px;
+           height: 20px;
+            padding: 5px 5px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        input:checked + label{
+            background-color: rgb(0,255,0);
+            color: aliceblue;
+        }
+         .q1{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+         .button{
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+         }
+         .submit{
+            background-color: black;
+            color: white;
+            width: 90px;
+            height: 35px;
+            border-radius: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="q1">
+        <h3>1, what is the famous ohm's formula?</h3>
+        <input type="radio" name="1" id="option1" >
+        <label for="option1">V= IR</label>
+        <input type="radio" name="1" id="option2">
+        <label for="option2">F= ma</label>
+        <input type="radio" name="1" id="option3">
+        <label for="option3">P= VI</label>
+    </div>
+    <div class="q1">
+        <h3> 2, Who intoduced the concept of AC powe ?</h3>
+        <input type="radio" name="2" id="option4">
+        <label for="option4">Tesla</label>
+        <input type="radio" name="2" id="option5">
+        <label for="option5">M. Faraday</label>
+        <input type="radio" name="2" id="option6">
+        <label for="option6">A. Einstein</label>
+    </div>
+    <div class="q1">
+        <h3> 3, Which field of natural science deals with life ?</h3>
+        <input type="radio" name="3" id="option7">
+        <label for="option7">physics</label>
+        <input type="radio" name="3" id="option8">
+        <label for="option8">biology</label>
+        <input type="radio" name="3" id="option9">
+        <label for="option9">chemistry</label>
+    </div>
+    <div class="q1">
+        <h3> 4, Which of the following is cereal?</h3>
+        <input type="radio" name="4" id="option10">
+        <label for="option10">maize</label>
+        <input type="radio" name="4" id="option11">
+        <label for="option11">banana</label>
+        <input type="radio" name="4" id="option12">
+        <label for="option12">tomato</label>
+    </div>
+    <div class="button">
+       <a href="answers.html"><button class="submit" type= "submit"> submit</button></a> 
+    </div>
+    
+</body>
+</html>
